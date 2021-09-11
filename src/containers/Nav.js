@@ -5,9 +5,13 @@ const Nav = styled.nav`
     justify-content: space-between;
     align-items: center;
     width: 100vw;
-    height: 9vh;
+    height: 7vh;
     background-color: black;
-    overflow: auto;
+    overflow: visible;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
 
     @media all and (min-width: 50em) {
         height: 8vhpx;

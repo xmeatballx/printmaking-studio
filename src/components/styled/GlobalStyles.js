@@ -6,6 +6,10 @@ const GlobalStyles = createGlobalStyle`
         margin: 0;
     }
 
+    .react-reveal{
+        animation-fill-mode: backwards !important;
+    }
+
     h1, h2, p {
         font-family: 'Roboto Slab', serif;
         margin: 10px;
