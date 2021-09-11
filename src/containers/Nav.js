@@ -5,12 +5,12 @@ const Nav = styled.nav`
     justify-content: space-between;
     align-items: center;
     width: 100vw;
-    height: 72px;
+    height: 9vh;
     background-color: black;
     overflow: auto;
 
     @media all and (min-width: 50em) {
-        height: 62px;
+        height: 8vhpx;
     }
 `
 export {Nav}
