@@ -10,6 +10,13 @@ const StyledImageCard = styled.div`
     justify-content: center;
 
     height: 50vh;
+
+    @media all and (min-width: 50em) {
+        height: 100vh;
+        background-size: 100%;
+        background-position-y: top;
+        width: ${({hero}) => hero ? '100vw' : '50vw'};
+    }
 `
 
 export {StyledImageCard}

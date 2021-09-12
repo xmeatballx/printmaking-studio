@@ -1,8 +1,8 @@
 import { StyledBodyText } from './styled/BodyText.styled'
 
-const BodyText = (({color, children}) => {
+const BodyText = (({color, overlay, children}) => {
     return (
-        <StyledBodyText color={color}>
+        <StyledBodyText color={color} overlay={overlay}>
             {children}
         </StyledBodyText>
     )

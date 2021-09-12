@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { StyledHamburger, StyledHamburgerSlice } from './styled/Hamburger.styled';
 import { NavLink } from './NavLink';
-import Fade from 'react-reveal/Fade'
+import Slide from 'react-reveal/Slide'
 import { StyledNavList } from './styled/NavLink.styled';
 
 const Hamburger = () => {
@@ -17,10 +17,10 @@ const Hamburger = () => {
                 <StyledHamburgerSlice/>
             </StyledHamburger>
                 <StyledNavList>
-            <Fade top when={menuOpen}>
+            <Slide right when={menuOpen}>
                     <NavLink>Create</NavLink>
                     <NavLink>Docs</NavLink>
-            </Fade>
+            </Slide>
                 </StyledNavList>
         </React.Fragment>
     )

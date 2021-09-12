@@ -14,6 +14,7 @@ const GlobalStyles = createGlobalStyle`
         font-family: 'Roboto Slab', serif;
         margin: 10px;
         padding: 0px 20px;
+        opacity: 100%;
     }
 
     h1 {
