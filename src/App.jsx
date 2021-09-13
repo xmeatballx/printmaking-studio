@@ -3,15 +3,18 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
-import { Landing } from './pages/landing';
+import { Landing } from './pages/landing'
+import { Upload } from './pages/upload'
 
 
 function App() {
   return (
     <Router>
       <Switch>
+        <Route path="/upload">
+          <Upload />
+        </Route>
         <Route path="/">
           <Landing />
         </Route>

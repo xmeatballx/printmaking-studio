@@ -4,7 +4,7 @@ import { Hamburger } from './Hamburger'
 import { HeadingText } from './HeadingText'
 import { ImageCard } from './ImageCard'
 import { Logo } from './Logo'
-import { NavLink } from './NavLink'
+import { NavBarLink } from './NavLink'
 import { Picker } from './Picker'
 import { TextInput } from './TextInput'
 import { GlobalStyles } from './styled/GlobalStyles'
@@ -17,7 +17,7 @@ export {
     HeadingText,
     ImageCard,
     Logo,
-    NavLink,
+    NavBarLink,
     Picker,
     TextInput
 }

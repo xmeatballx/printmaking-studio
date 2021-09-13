@@ -1,14 +1,19 @@
-/* section
-        <h3>Upload an Image</h3>
-        <imagecard button ratio>
-        <toolbar> */
-import { HeadingText, ImageCard } from '../components'
+import { GlobalStyles, Hamburger, HeadingText, ImageCard, Logo } from '../components'
+import { Nav, Section } from '../containers'
+import checker from '../assets/checker.jpg'
 
 const Upload = () => {
    return (
-      <>
-         <HeadingText>Upload an Image</HeadingText>
-         <ImageCard button buttonPrimary />
-      </>
+      <Section cta small>
+         <GlobalStyles />
+         <Nav>
+            <Logo />
+            <Hamburger />
+         </Nav>
+         <HeadingText alignment='center'>Upload an Image</HeadingText>
+         <ImageCard source={checker} aspect='1 / 1.25' button buttonPrimary />
+      </Section>
    )
 }
+
+export { Upload }

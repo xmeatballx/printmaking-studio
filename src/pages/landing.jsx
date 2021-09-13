@@ -11,15 +11,14 @@ import Fade from 'react-reveal/Fade'
 
 const Landing = (() => {
     return (
-        <React.Fragment>
+        <>
             <GlobalStyles />
             <Nav>
                 <Logo />
                 <Hamburger />
             </Nav>
             <Section bg='yellow'>
-                <Fade bottom>
-                    {/* change image button to secondary and centered */}
+                <Fade direction="down">
                     <ImageCard hero source={herobg} button>
                         <Button>Get Started</Button>
                     </ImageCard>
@@ -68,7 +67,7 @@ const Landing = (() => {
                     <Button>Docs</Button>
                 </Fade>
             </Section>
-        </React.Fragment>
+        </>
     )
 })
 

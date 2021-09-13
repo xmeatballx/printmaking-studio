@@ -1,9 +1,9 @@
 import { StyledNavLink } from './styled/NavLink.styled'
 
-const NavLink = ({children}) => {
-    return(
+const NavBarLink = ({ children }) => {
+    return (
         <StyledNavLink>{children}</StyledNavLink>
     )
 }
 
-export {NavLink}
+export { NavBarLink }
