@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 
 const StyledImageCard = styled.div`
-    background-image: ${({source}) => source ? `url(${source})` : ''};
-    background-size: ${({hero}) => hero ? '170%' : '100%'};
+    background-image: ${({ source }) => source ? `url(${source})` : ''};
+    background-size: ${({ hero }) => hero ? '170%' : '100%'};
     background-position-x: right;
     background-position-y: bottom;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
 
     height: 50vh;
@@ -15,8 +15,8 @@ const StyledImageCard = styled.div`
         height: 100vh;
         background-size: 100%;
         background-position-y: top;
-        width: ${({hero}) => hero ? '100vw' : '50vw'};
+        width: ${({ hero }) => hero ? '100vw' : '50vw'};
     }
 `
 
-export {StyledImageCard}
+export { StyledImageCard }

@@ -1,17 +1,12 @@
 // todo import from components using a local index.jsx
 import React from 'react'
-import { Button } from '../components/Button'
-import { Nav } from '../containers/Nav'
-import { Logo } from '../components/Logo'
-import { Hamburger } from '../components/Hamburger'
-import { GlobalStyles } from '../components/styled/GlobalStyles'
-import { Section, TextContainer } from '../containers/Section'
-import { ImageCard } from '../components/ImageCard'
+import { Button, Logo, Hamburger, GlobalStyles, ImageCard, HeadingText, BodyText } from '../components'
+import { Nav, Section, TextContainer } from '../containers'
+
 import herobg from '../assets/placeholderbg.png'
 import halftone1 from '../assets/halftonetest.png'
 import halftone2 from '../assets/halftonetest2.png'
-import { HeadingText } from '../components/HeadingText'
-import { BodyText } from '../components/BodyText'
+
 import Fade from 'react-reveal/Fade'
 
 const Landing = (() => {
@@ -24,8 +19,9 @@ const Landing = (() => {
             </Nav>
             <Section bg='yellow'>
                 <Fade bottom>
+                    {/* change image button to secondary and centered */}
                     <ImageCard hero source={herobg} button>
-                        <Button primary>Get Started</Button>
+                        <Button>Get Started</Button>
                     </ImageCard>
                     <TextContainer overlay>
                         <HeadingText color='magenta' mult overlay>
