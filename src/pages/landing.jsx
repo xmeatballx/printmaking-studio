@@ -17,47 +17,48 @@ const Landing = (() => {
                 <Logo />
                 <Hamburger />
             </Nav>
-            <Section bg='yellow'>
-                <Fade direction="down">
+            <main>
+            <Fade direction="down">
+                <Section solid solidbg='black'>
                     <ImageCard hero source={herobg} button>
                         <Button>Get Started</Button>
                     </ImageCard>
                     <TextContainer overlay>
-                        <HeadingText color='magenta' mult overlay>
+                        <HeadingText color='white' mult overlay>
                             Lorem ipsum dolor sit amet.
                         </HeadingText>
-                        <BodyText color='magenta' overlay>
+                        <BodyText color='cyan' overlay>
                             Lorem ipsum dolor sit amet I am the glob glob glooo bob bob abananan its the and of in time out gin when your feel like dream now flus or night
                         </BodyText>
                     </TextContainer>
-                </Fade>
-            </Section>
-            <Section bg='magenta' flip bisect>
-                <Fade bottom >
+                </Section>
+            </Fade>
+            <Fade bottom >
+                <Section solid solidbg='black' flip bisect>
                     <ImageCard source={halftone1} />
                     <TextContainer>
-                        <HeadingText color='cyan' mult right>
+                        <HeadingText color='white' mult right>
                             Lorem ipsum dolor sit amet.
                         </HeadingText>
                         <BodyText color='cyan' right bisect>
                             Lorem ipsum dolor sit amet I am the glob glob glooo bob bob abananan its the and of in time out gin when your feel like dream now flus or night
                         </BodyText>
                     </TextContainer>
-                </Fade>
-            </Section>
-            <Section bg="cyan" bisect reverse>
-                <Fade bottom>
+                </Section>
+            </Fade>
+            <Fade bottom>
+                <Section solid solidbg="black" bisect reverse>
                     <ImageCard source={halftone2} />
                     <TextContainer>
-                        <HeadingText color='magenta' mult>
+                        <HeadingText color='white' mult>
                             Lorem ipsum dolor sit amet.
                         </HeadingText>
-                        <BodyText color="magenta">
+                        <BodyText color="cyan">
                             Lorem ipsum dolor sit amet I am the glob glob glooo bob bob abananan its the and of in time out gin when your feel like dream now flus or night
                         </BodyText>
                     </TextContainer>
-                </Fade>
-            </Section>
+                </Section>
+            </Fade>
             <Section bg='cyan' solid solidbg='cyan' cta>
                 <Fade bottom>
                     <HeadingText color='white' alignment='center'>
@@ -67,6 +68,7 @@ const Landing = (() => {
                     <Button>Docs</Button>
                 </Fade>
             </Section>
+        </main>
         </>
     )
 })

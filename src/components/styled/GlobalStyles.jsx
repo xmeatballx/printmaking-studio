@@ -1,13 +1,26 @@
-import {createGlobalStyle} from 'styled-components'
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
     * {
         box-sizing: border-box;
         margin: 0;
+        /* font-size: 80%; */
+    }
+
+    body {
+        background: cyan;
     }
 
     .react-reveal{
         animation-fill-mode: backwards !important;
+    }
+
+    main {
+        margin: 1em;
+    }
+
+    main section {
+        margin: 1em 0;
     }
 
     h1, h2, p {
@@ -20,7 +33,7 @@ const GlobalStyles = createGlobalStyle`
     h1 {
         font-weight: 700;
         font-size: 40px;
-        padding-top: 10%;
+        /* padding-top: 10%; */
     }
 
     h2 {
@@ -46,5 +59,5 @@ const GlobalStyles = createGlobalStyle`
             font-size: 24px;
         }
     }
-`
-export {GlobalStyles}
+`;
+export { GlobalStyles };

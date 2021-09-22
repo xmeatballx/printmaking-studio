@@ -1,19 +1,33 @@
-import { GlobalStyles, Hamburger, HeadingText, ImageCard, Logo } from '../components'
-import { Nav, Section } from '../containers'
-import checker from '../assets/checker.jpg'
+import {
+  Button,
+  GlobalStyles,
+  Hamburger,
+  HeadingText,
+  ImageCard,
+  Logo,
+  Toolbar,
+} from "../components";
+import { Nav, Section } from "../containers";
+import checker from "../assets/checker.jpg";
 
 const Upload = () => {
-   return (
-      <Section cta small>
-         <GlobalStyles />
-         <Nav>
-            <Logo />
-            <Hamburger />
-         </Nav>
-         <HeadingText alignment='center'>Upload an Image</HeadingText>
-         <ImageCard source={checker} aspect='1 / 1.25' button buttonPrimary />
-      </Section>
-   )
-}
+  return (
+    <Section cta solid solidbg="black">
+      <GlobalStyles />
+      <Nav>
+        <Logo />
+        <Hamburger />
+      </Nav>
+      <HeadingText color="white" alignment="center">
+        Pick an Image
+      </HeadingText>
+      <ImageCard aspect="1 / 1.25" button>
+        Upload
+      </ImageCard>
+      <Toolbar />
+      <Button primary>Ready</Button>
+    </Section>
+  );
+};
 
-export { Upload }
+export { Upload };

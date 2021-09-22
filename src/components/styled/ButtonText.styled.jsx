@@ -1,10 +1,9 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 const StyledButtonText = styled.p`
-    margin: 0;
-    padding: 0;
-    mix-blend-mode: ${({primary}) => primary ? 'multiply' : 'none'};
-    color: ${({primary}) => primary ? 'cyan' : 'white'};
-`
+  margin: 0;
+  padding: 0;
+  color: black;
+`;
 
-export {StyledButtonText}
+export { StyledButtonText };

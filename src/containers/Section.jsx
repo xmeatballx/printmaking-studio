@@ -14,6 +14,10 @@ const Section = styled.section`
     }
 `
 const TextContainer = styled.div`
+
+margin-top: 1em;
+overflow: hidden;
+
 @media all and(min-width: 50em) {
     display: flex;
     flex-direction: column;
