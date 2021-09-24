@@ -7,9 +7,9 @@ import {
   faImage,
 } from "@fortawesome/free-solid-svg-icons";
 import { StyledToolbar } from "./styled/Toolbar.styled";
-const Toolbar = () => {
+const Toolbar = ({ gridColumn, gridRow }) => {
   return (
-    <StyledToolbar>
+    <StyledToolbar gridColumn={gridColumn} gridRow={gridRow}>
       <li>
         <FontAwesomeIcon icon={faCrop} />
       </li>

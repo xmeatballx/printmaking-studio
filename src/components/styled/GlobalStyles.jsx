@@ -23,11 +23,8 @@ const GlobalStyles = createGlobalStyle`
         margin: 1em 0;
     }
 
-    h1, h2, p {
+    h1, h2, p, label {
         font-family: 'Roboto Slab', serif;
-        margin: 10px;
-        padding: 0px 20px;
-        opacity: 100%;
     }
 
     h1 {
@@ -41,7 +38,15 @@ const GlobalStyles = createGlobalStyle`
     }
 
     p {
-        font-size: 20px;
+        font-size: 16px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    fieldset {
+        padding: 0;
     }
 
     @media all and (min-width: 50em) {

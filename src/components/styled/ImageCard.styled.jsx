@@ -10,8 +10,9 @@ const StyledImageCard = styled.div`
   align-items: center;
   justify-content: center;
   aspect-ratio: ${({ aspect }) => aspect};
+  margin-top: ${({ yOffset }) => (yOffset ? "7vh" : "")};
 
-  height: 50vh;
+  height: ${({ large }) => (large ? "75vh" : "50vh")};
 
   @media all and(min-width: 50em) {
     height: 100vh;

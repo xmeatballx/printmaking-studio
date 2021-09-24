@@ -22,7 +22,7 @@ const Upload = () => {
         Pick an Image
       </HeadingText>
       <ImageCard aspect="1 / 1.25" button>
-        Upload
+        <Button href="/studio">Upload</Button>
       </ImageCard>
       <Toolbar />
       <Button primary>Ready</Button>

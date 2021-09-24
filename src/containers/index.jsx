@@ -1,11 +1,5 @@
-import { Editor, EditorGroup } from './Editor'
-import { Nav } from './Nav'
-import { Section, TextContainer } from './Section'
+import { Editor, EditorLegend, EditorFieldset } from "./Editor";
+import { Nav } from "./Nav";
+import { Section, TextContainer } from "./Section";
 
-export {
-    Editor,
-    EditorGroup,
-    Nav,
-    Section,
-    TextContainer
-}
+export { Editor, EditorLegend, EditorFieldset, Nav, Section, TextContainer };

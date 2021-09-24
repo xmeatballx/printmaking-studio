@@ -7,11 +7,19 @@ const ImageCard = ({
   buttonPrimary,
   hero,
   aspect,
+  yOffset,
+  large,
   children,
 }) => {
   return (
-    <StyledImageCard source={source} hero={hero} aspect={aspect}>
-      {button ? <Button primary={buttonPrimary}>{children}</Button> : ""}
+    <StyledImageCard
+      source={source}
+      hero={hero}
+      aspect={aspect}
+      yOffset={yOffset}
+      large={large}
+    >
+      {button ? children : ""}
     </StyledImageCard>
   );
 };

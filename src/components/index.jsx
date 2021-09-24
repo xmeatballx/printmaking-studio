@@ -9,7 +9,7 @@ import { Picker } from "./Picker";
 import { TextInput } from "./TextInput";
 import { GlobalStyles } from "./styled/GlobalStyles";
 import { Toolbar } from "./Toolbar";
-
+import { EditorLink } from "./EditorLink";
 export {
   GlobalStyles,
   BodyText,
@@ -22,4 +22,5 @@ export {
   Picker,
   TextInput,
   Toolbar,
+  EditorLink,
 };
