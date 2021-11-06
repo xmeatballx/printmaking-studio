@@ -1,2 +1,2 @@
-# printmaking-studio
-A tool for preparing artworks for printmaking
+# Printmaking Studio
+prototype screenprinted garments online
